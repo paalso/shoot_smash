@@ -1,3 +1,4 @@
 # shoot_smash
-Training project for Moscow Coding School. Unit 3
+Training project for ntschool
+. Unit 3
 https://youtu.be/JV-rAJDrbLo?t=5976
