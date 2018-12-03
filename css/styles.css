@@ -1,0 +1,114 @@
+body {
+	font-family: 'century gothic', arial;
+	background-color: #dca23e;
+	color: #2A0A0A;
+
+
+	background: fixed url(../img/small_logo.jpg) right 10px bottom 10px no-repeat, 
+		url(../img/blood.jpg);
+	background-size: 90px, auto;
+	/*Принципиально: не background-image: .., ...;  а строго background: .., ...; */
+
+/*
+	background: rgba(255,255,255,0.8);
+	opacity: 0.2;
+*/}
+
+a {
+	text-decoration: none;
+}
+
+
+h1 {
+	font-size: 30px;
+	color: #410505;
+}
+
+h2 {
+	font-size: 24px;
+	color: #410505;
+}
+
+h3 {
+	margin: 0;
+}
+
+
+.absolute-logo {
+	position: fixed; /* Фиксированное положение */
+    left: 10; bottom: 10;
+	width: 160px;
+
+}
+.products_img {
+	/*overflow:hidden;*/
+	padding: 10px;
+	width: 330px;
+	height: 220px;
+	transition: transform 0.5s;		/*плавное увеличение картинки, лучше делать здесь*/
+}
+
+/*
+.products_img:hover{
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ }
+
+*/
+
+.products_img:hover{
+ transform: scale(1.1);
+ transition: transform 0.5s;		 /*плавное увеличение картинки, лучше здесь не делать - возврат к исх. состоянию будет резким*/
+}
+
+li {
+	list-style-type: none;
+}
+
+
+.menu li {
+	display: inline;
+	padding-right: 40px;
+}
+
+.menu li.currentmenu {
+}
+
+
+.menu a {
+	text-decoration: none;
+}
+
+.menu a:hover {
+	color: #2a0a0a;
+	font-weight: bold;
+	/*color: brown;*/
+}
+
+.menu li.selected {
+	font-weight: bold; 
+	text-decoration: underline;
+}
+
+
+.site_title_text {
+	float: right;
+	margin-right: 120px;
+}
+
+.news-item {
+	padding-top: 10px;
+	padding-left: 20px;
+	margin-bottom: 40px;
+}
+
+
+.possible_aimes {
+	/*float: right;*/
+}
+
+footer {
+	font-style: italic;
+	font-size: smaller;
+}
